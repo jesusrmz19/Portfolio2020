@@ -1,18 +1,31 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --main-color: #191B1F;
+    --secondary-color: #FF8125;
+    --third-color: #757678;
+}
 body, p {
     margin: 0;
     padding: 0;
 }
 @font-face {
-    font-family: Regular Oswald;
-    src: url(/Fonts/Oswald/static/Oswald-Regular.ttf);
+    font-family: Regular Sarabun;
+    src: url(/Fonts/Sarabun/Sarabun-Regular.ttf);
+}
+@font-face {
+    font-family: Bold Sarabun;
+    src: url(/Fonts/Sarabun/Sarabun-Bold.ttf);
+}
+@font-face {
+    font-family: Light Sarabun;
+    src: url(/Fonts/Sarabun/Sarabun-Light.ttf);
 }
 .error-container {
     width: 100%;
     height: 100vh;
-    background-color: #191B1F;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     font-family: Regular Oswald;
@@ -20,4 +33,110 @@ body, p {
     align-items: center;
     color: white;
     font-size: 2.5em;
+}
+.first-fold {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    background: url(/images/firstfold-background.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 2000px 0 0 0 rgba(25, 27, 31, 0.55);
+}
+.first-fold-txt {
+    text-align: left;
+    width: 80%;
+    font-family: Bold Sarabun;
+    font-size: 40px;
+    color: #FFF;
+}
+.rest-of-txt {
+    font-size: 28px;
+    font-family: Regular Sarabun;
+}
+.orange-txt {
+    color: var(--secondary-color);
+}
+.hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 0.8em 1.8em;
+    outline: solid 1px #fff;
+    background-color: var(--main-color);
+    font-family: Bold Sarabun;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.hero-btn:hover, .hero-btn:active {
+    background-color: var(--secondary-color);
+    outline: none;
+}
+/* ----- PROJECTS SECTION ----- */
+.projects {
+    background-color: #F3F3F3;
+    position: sticky;
+}
+.section-title {
+    padding-top: 55px;
+    font-family: Bold Sarabun;
+    text-align: center;
+    font-size: 26px;
+}
+.project {
+    padding: 3em 2em;
+}
+.project-img {
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+}
+.project-expresa {
+    background: url(/images/Expresa_Foods.png);
+    background-size: cover;
+}
+.project-ilex {
+    background: url(/images/Ilex.png);
+    background-size: cover;
+}
+.project-name {
+    font-size: 20px;
+    display: inline-block;
+    font-family: Bold Sarabun;
+    padding: 1em 0 0 0;
+}
+.project-description {
+    font-family: Light Sarabun;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    padding: 0.8em 0 1em 0;
+}
+.project-btns {
+    text-align: center;
+}
+.project-btn {
+    font-family: Bold Sarabun;
+    padding: 0.8em 1.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    background-color: var(--main-color);
+    margin: 0 0.5em;
+    box-shadow: 5px 5px var(--third-color);
+    transition: all 0.3s;
+}
+.project-btn:active {
+    box-shadow: 1px 1px var(--third-color);
+    transform: translate(4px, 4px);
+}
+.project-btn:hover {
+    background-color: var(--secondary-color);
 }
