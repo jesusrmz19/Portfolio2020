@@ -84,7 +84,7 @@ body, p {
 /* ----- PROJECTS SECTION ----- */
 .projects {
     background-color: var(--fourth-color);
-    position: sticky;
+    position: relative;
 }
 .section-title {
     padding-top: 55px;
@@ -141,4 +141,32 @@ body, p {
 }
 .project-btn:hover {
     background-color: var(--secondary-color);
+}
+/* ----- ABOUT ------*/
+.about-n-skills {
+    background-color: var(--main-color);
+    color: #fff;
+    position: relative;
+}
+.about, .skills {
+    margin: auto;
+    width: 85%;
+    padding: 55px 0 25px 0;
+}
+.skills {
+    padding: 0 0 25px 0;
+}
+.about .title, .skills .title {
+    font-family: Bold Sarabun;
+    font-size: 26px
+}
+.about .txt, .skills .txt{
+    font-family: Light Sarabun;
+    font-size: 16px;
+    padding: 0.8em 0 1em 0;
+    text-align: justify;
+    line-height: 140%;
+}
+.skills .subtxt {
+    font-size: 14px;
 }
