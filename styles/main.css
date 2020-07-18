@@ -35,6 +35,7 @@ body, p {
     color: #FFF;
     font-size: 2.5em;
 }
+/* ----- FIRST FOLD SECTION ----- */
 .first-fold {
     position: sticky;
     top: 0;
