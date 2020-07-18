@@ -5,6 +5,7 @@
     --main-color: #191B1F;
     --secondary-color: #FF8125;
     --third-color: #757678;
+    --fourth-color: #F3F3F3;
 }
 body, p {
     margin: 0;
@@ -31,7 +32,7 @@ body, p {
     font-family: Regular Oswald;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #FFF;
     font-size: 2.5em;
 }
 .first-fold {
@@ -71,7 +72,7 @@ body, p {
     background-color: var(--main-color);
     font-family: Bold Sarabun;
     font-size: 16px;
-    color: white;
+    color: #FFF;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -81,7 +82,7 @@ body, p {
 }
 /* ----- PROJECTS SECTION ----- */
 .projects {
-    background-color: #F3F3F3;
+    background-color: var(--fourth-color);
     position: sticky;
 }
 .section-title {
