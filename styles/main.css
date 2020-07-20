@@ -60,7 +60,7 @@ body, p {
     font-size: 30px;
     width: 100px;
     height: 100px;
-    color: #fff;
+    color: var(--secondary-color);
     border-radius: 100%;
 }
 .loader::before {
