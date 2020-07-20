@@ -83,6 +83,7 @@ body, p {
     text-decoration: none;
     transition: all 0.3s;
     cursor: pointer;
+    z-index: 55;
 }
 .hero-btn:hover, .hero-btn:active {
     background-color: var(--secondary-color);
