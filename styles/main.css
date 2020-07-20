@@ -82,6 +82,7 @@ body, p {
     color: #FFF;
     text-decoration: none;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .hero-btn:hover, .hero-btn:active {
     background-color: var(--secondary-color);
