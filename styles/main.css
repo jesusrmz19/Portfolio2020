@@ -196,6 +196,26 @@ body, p {
     font-size: 24px;
     width: 85%;
     margin: auto;
+    border: solid 1px red;
+    padding: 1em 0;
+}
+.footer-logo {
+    display: inline-block;
+    position: relative;
+    font-family: Regular Oswald;
+    font-size: 15px;
+    margin: 0 1em 0 0;
+}
+.footer-logo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border: solid #fff 1px;
+    border-radius: 100%;
 }
 .footer-menu, .footer-contact, .footer-online, .footer-rights {
     width: 85%;
