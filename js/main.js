@@ -1,11 +1,7 @@
 const toProjects = document.querySelector('#toProjects');
-var projects = document.querySelector('#projects');
-const y = projects.getBoundingClientRect().top + window.scrollY;
+const projects = document.querySelector('#projects');
 function projectsIntoView(){
-   window.scroll({
-    top: y,
-    behavior: 'smooth'
-    });
+    document.querySelector('#projects').scrollIntoView({behavior: 'smooth'});
 }
 toProjects.addEventListener('click', projectsIntoView);
 

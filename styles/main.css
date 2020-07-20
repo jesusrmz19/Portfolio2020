@@ -7,6 +7,9 @@
     --third-color: #5E5F62;
     --fourth-color: #F3F3F3;
 }
+html {
+    scroll-behavior: smooth;
+}
 body, p {
     margin: 0;
     padding: 0;
