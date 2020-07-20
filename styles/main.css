@@ -45,9 +45,7 @@ body, p {
 }
 /* ----- FIRST FOLD SECTION ----- */
 .first-fold {
-    position: sticky;
-    top: 0;
-    left: 0;
+    position: relative;
     background-color: var(--main-color);
     background: url(/images/firstfold-background.jpg);
     background-position: center;
@@ -193,7 +191,6 @@ body, p {
     font-size: 24px;
     width: 85%;
     margin: auto;
-    padding: 1.8em 0 1em 0;
 }
 .footer-menu, .footer-contact, .footer-online, .footer-rights {
     width: 85%;
