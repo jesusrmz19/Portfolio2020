@@ -322,10 +322,12 @@ body, p {
     padding: 0 0 0.4em 0;
 }
 .footer-txt {
+    display: block;
     color: rgba(255,255,255,0.65);
     padding: 0 0 0.4em 0;
     font-family: Light Sarabun;
     font-size: 18px;
+    text-decoration: none;
 }
 .footer-contact .hero-btn {
     margin: 10px 0;
