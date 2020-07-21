@@ -335,6 +335,66 @@ body, p {
 .footer-rights .footer-txt {
     font-size: 15px;
 }
+/* ----- DESKTOP NAVBAR ----- */
+nav {
+    padding: 0;
+    margin: 0;
+}
+.navbar-container {
+    display: none;
+    padding: 1.2em 3em;
+    z-index: 1001;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-container ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-container ul li {
+    margin: 0;
+    padding: 0;
+}
+.navbar-container ul li a {
+    margin: 0 0.8em;
+    color: #fff;
+    font-family: Bold Sarabun;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.navbar-container ul li a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.navbar-logo {
+    color: white;
+    display: inline-block;
+    position: relative;
+    font-family: Regular Oswald;
+    font-size: 15px;
+    margin: 0 1em 0 0;
+    z-index: 15;
+}
+.navbar-logo::before {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border: solid #fff 1px;
+    border-radius: 100%;
+    transition: all 0.2s;
+}
 @media (min-width: 1200px) {
     .first-fold {
         padding: 0 8em;
