@@ -407,6 +407,7 @@ nav {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(4, minmax(100px, auto));
+        padding: 3em 5em;
     }
     .project-img {
         grid-column: 1/7;
