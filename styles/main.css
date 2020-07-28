@@ -435,4 +435,12 @@ nav {
     .experiments-container {
         display: flex;
     }
+    .about-n-skills {
+        display: flex;
+        justify-content: center;
+    }
+    .about, .skills {
+        padding: 5em 4em;
+        margin: 0;
+    }
 }
