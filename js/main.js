@@ -16,3 +16,13 @@ function projectsIntoView(){
 }
 toProjects.addEventListener('click', projectsIntoView);
 
+/* Desktop Menu */
+function handleClickDesktopLink(event) {
+    let toSection = event.target.dataset.block;
+    document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
+}
+document.querySelectorAll('.desktop-menu-link').forEach((link) => {
+    link.addEventListener('click', handleClickDesktopLink);
+});
+
+
