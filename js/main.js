@@ -23,4 +23,7 @@ function handleClickDesktopLink(event) {
 document.querySelectorAll('.desktop-menu-link').forEach((link) => {
     link.addEventListener('click', handleClickDesktopLink);
 });
+document.querySelectorAll('.footer-menu-link').forEach((link) => {
+    link.addEventListener('click', handleClickDesktopLink);
+});
 
