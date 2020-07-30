@@ -329,6 +329,11 @@ body, p {
     font-family: Light Sarabun;
     font-size: 18px;
     text-decoration: none;
+    transition: color .2s, text-decoration .2s;
+}
+.footer-link:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
 }
 .footer-contact .hero-btn {
     margin: 10px 0;
@@ -452,6 +457,11 @@ nav {
     .footer-header {
         flex-grow: 3;
         flex-basis: 100%;
+        padding: 1.5em 0;
+        font-size: 20px;
+    }
+    .footer-title {
+        font-size: 22px;
     }
     .footer-info {
         display: flex;
