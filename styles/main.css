@@ -449,7 +449,28 @@ nav {
         padding: 5em 4em;
         margin: 0;
     }
+    .footer {
+        padding: 0 3em;
+    }
     .footer-flex {
         display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-header {
+        flex-grow: 3;
+        flex-basis: 100%;
+    }
+    .footer-info {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+    }
+    .footer-info > div {
+        padding: 0;
+        margin: 0;
+    }
+    .footer-rights {
+        flex-grow: 3;
+        flex-basis: 100%;
     }
 }
