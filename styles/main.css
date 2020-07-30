@@ -285,6 +285,12 @@ body, p {
     background-color: var(--third-color);
     color: white;
 }
+.footer-nodisplay {
+    display: none;
+}
+.footer-display {
+    display: block;
+}
 .footer-header {
     font-family: Regular Oswald;
     letter-spacing: 1.2px;
@@ -442,5 +448,8 @@ nav {
     .about, .skills {
         padding: 5em 4em;
         margin: 0;
+    }
+    .footer-flex {
+        display: flex;
     }
 }

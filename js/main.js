@@ -7,16 +7,12 @@ function loading() {
 function showPage() {
     document.querySelector('.loader').style.display = 'none';
     document.querySelector('.main-container').style.display = 'block';
-    setTimeout(function(){
-        if(actualWidth >= 1200) {
-            debugger;
-            console.log('flex');
-            document.querySelector('.footer').style.display = 'flex';
-        }else{
-            console.log('block');
-            document.querySelector('.footer').style.display = 'block';
-        }
-    },4000);
+    document.querySelector('.footer').classList.remove('footer-nodisplay');
+    if (actualWidth >= 1200) {
+        document.querySelector('.footer').classList.add('footer-flex');
+    } else {
+        document.querySelector('.footer').classList.add('footer-display');
+    }
 }
 const toProjects = document.querySelector('#toProjects');
 const projects = document.querySelector('#projects');
