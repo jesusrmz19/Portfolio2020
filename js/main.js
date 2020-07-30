@@ -10,13 +10,6 @@ function showPage() {
     maximumScroll = document.body.offsetHeight - window.innerHeight + 30;
 }
 
-/* Hero Btn Action */
-const toProjects = document.querySelector('#toProjects');
-const projects = document.querySelector('#projects');
-function projectsIntoView(){
-    document.querySelector('#projects').scrollIntoView({behavior: 'smooth'});
-}
-toProjects.addEventListener('click', projectsIntoView);
 
 /* Desktop Menu */
 function handleClickDesktopLink(event) {
