@@ -7,12 +7,7 @@ function loading() {
 function showPage() {
     document.querySelector('.loader').style.display = 'none';
     document.querySelector('.main-container').style.display = 'block';
-    document.querySelector('.footer').classList.remove('footer-nodisplay');
-    if (actualWidth >= 1200) {
-        document.querySelector('.footer').classList.add('footer-flex');
-    } else {
-        document.querySelector('.footer').classList.add('footer-display');
-    }
+    document.querySelector('.footer').style.display = 'flex';
 }
 const toProjects = document.querySelector('#toProjects');
 const projects = document.querySelector('#projects');

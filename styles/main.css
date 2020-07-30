@@ -284,12 +284,7 @@ body, p {
     width: 100%;
     background-color: var(--third-color);
     color: white;
-}
-.footer-nodisplay {
-    display: none;
-}
-.footer-display {
-    display: block;
+    flex-direction: column;
 }
 .footer-header {
     font-family: Regular Oswald;
@@ -450,11 +445,9 @@ nav {
         margin: 0;
     }
     .footer {
-        padding: 0 3em;
-    }
-    .footer-flex {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        padding: 0 3em;
     }
     .footer-header {
         flex-grow: 3;
