@@ -9,7 +9,15 @@ function showPage() {
     document.querySelector('.footer').style.display = 'flex';
     maximumScroll = document.body.offsetHeight - window.innerHeight + 30;
 }
-
+/* Mobile Menu Btn */
+const bars = document.querySelectorAll('.bar');
+function openMenu() {
+    console.log('click');
+    bars.forEach((bar) => {
+        bar.classList.toggle('open');
+    });
+}
+document.querySelector('.mobile-menu-btn').addEventListener('click', openMenu);
 
 /* Desktop Menu */
 function handleClickDesktopLink(event) {
