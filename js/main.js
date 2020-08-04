@@ -48,3 +48,17 @@ document.querySelectorAll('.footer-menu-link').forEach((link) => {
     link.addEventListener('click', handleClickDesktopLink);
 });
 
+/* GO UP BUTTON */
+const goUpBtn = document.querySelector('.go_up_btn');
+function goUp() {
+    window.scroll({ top: 0, behavior: "smooth" });
+}
+goUpBtn.addEventListener('click', goUp);
+function showUpBtn() {
+    if (window.scrollY >= 700) {
+        goUpBtn.classList.add('visible');
+    } else {
+        goUpBtn.classList.remove('visible');
+    }
+}
+window.addEventListener('scroll', showUpBtn);

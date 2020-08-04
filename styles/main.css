@@ -183,6 +183,30 @@ body {
     width: 25px;
     height: 3px;
 }
+/* ----- GO UP ----- */
+.go_up_btn {
+    opacity: 0;
+    overflow: hidden;
+    z-index: 1003;
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: Bold Sarabun;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 1px 10px #a3a3a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .3s;
+}
+.go_up_btn.visible {
+    opacity: 1;
+}
 /* ----- FIRST FOLD SECTION ----- */
 .first-fold {
     position: relative;
