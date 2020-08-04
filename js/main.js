@@ -5,19 +5,32 @@ function loading() {
 }
 function showPage() {
     document.querySelector('.loader').style.display = 'none';
+    document.querySelector('.navbar-mobile').classList.add('visible');
     document.querySelector('.main-container').style.display = 'block';
     document.querySelector('.footer').style.display = 'flex';
-    maximumScroll = document.body.offsetHeight - window.innerHeight + 30;
+    maximumScroll = document.body.offsetHeight - window.innerHeight + 50;
 }
-/* Mobile Menu Btn */
-const bars = document.querySelectorAll('.bar');
-function openMenu() {
-    console.log('click');
-    bars.forEach((bar) => {
-        bar.classList.toggle('open');
-    });
+
+/* Mobile Menu */
+function openMobileMenu() {
+    document.querySelector('.overlay-container').classList.toggle('open');
 }
-document.querySelector('.mobile-menu-btn').addEventListener('click', openMenu);
+function handleClickMobileLink(event) {
+    document.querySelector('.overlay-container').classList.toggle('open');
+    setTimeout(function(){
+        let toSection = event.target.dataset.block;
+        if (toSection == 'contact') {
+            window.scroll({ top: maximumScroll, behavior: "smooth" });
+        }else{
+            document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
+        }
+    },650);
+}
+document.querySelector('.close_btn').addEventListener('click', openMobileMenu);
+document.querySelector('.mobile-menu-btn').addEventListener('click', openMobileMenu);
+document.querySelectorAll('.overlay-menu-item').forEach((link) => {
+    link.addEventListener('click', handleClickMobileLink);
+});
 
 /* Desktop Menu */
 function handleClickDesktopLink(event) {

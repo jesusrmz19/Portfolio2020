@@ -14,6 +14,9 @@ body, p {
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: var(--main-color);
+}
 @font-face {
     font-family: Regular Sarabun;
     src: url(/Fonts/Sarabun/Sarabun-Regular.ttf);
@@ -86,17 +89,21 @@ body, p {
 }
 /* ----- MOBILE MENU BTN ----- */
 .navbar-mobile {
+    display: none;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 50;
     padding: 0.4em;
 }
+.navbar-mobile.visible {
+    display: block;
+}
 .mobile-menu-btn {
     position: relative;
     padding: 0.8em;
     cursor: pointer;
-    float: right;
+    float: left;
 }
 .mobile-menu-btn::before {
     content: "";
@@ -105,34 +112,77 @@ body, p {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: -1;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     background-color: #FFF;
 }
 .bar {
-    width: 30px;
+    width: 25px;
     background-color: var(--main-color);
-    margin: 6px 0;
+    margin: 4px 0;
     height: 3px;
     transition: opacity .3s, transform .3s;
-}
-.bar.open {
-    opacity: 0;
 }
 .bar.short {
     width: 15px;
 }
-.bar.long.open {
-    opacity: 1;
-    transform: rotate(-45deg) translate(-6px, 6px);
+.overlay-container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -110%;
+    z-index: 1001;
+    display: flex;
+    flex-wrap: wrap;
+    transition: left 0.6s;
+    transition-timing-function: cubic-bezier(0,0,.54,-0.15);
 }
-.bar.short.open {
-    opacity: 1;
+.overlay-container.open {
+    left: 0;
+}
+.overlay-menu {
+    flex-grow: 2;
+    padding: 16px 25px;
+    font-size: 25px;
+    font-family: Bold Sarabun;
+    background-color: var(--third-color);
+}
+.overlay-menu-item {
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.overlay-close {
+    background-color: var(--main-color);
+}
+.close_btn {
     width: 30px;
-    transform: rotate(45deg) translate(-6px, -6px);
+    height: 30px;
+    background-color: var(--main-color);
+    margin: 16px 0.8em;
+    position: relative;
+    cursor: pointer;
 }
-
+.close_btn .bar {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    background-color: white;
+}
+.close_btn .bar::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    background-color: white;
+    width: 25px;
+    height: 3px;
+}
 /* ----- FIRST FOLD SECTION ----- */
 .first-fold {
     position: relative;
@@ -450,6 +500,9 @@ nav {
     transition: all 0.2s;
 }
 @media (min-width: 1200px) {
+    .navbar-mobile.visible {
+        display: none;
+    }
     .navbar-container {
         display: flex;
     }
