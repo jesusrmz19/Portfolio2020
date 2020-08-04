@@ -527,7 +527,7 @@ nav {
     .navbar-mobile.visible {
         display: none;
     }
-    .navbar-container {
+    .navbar-container.visible {
         display: flex;
     }
     .first-fold {

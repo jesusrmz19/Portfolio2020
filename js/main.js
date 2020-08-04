@@ -6,6 +6,7 @@ function loading() {
 function showPage() {
     document.querySelector('.loader').style.display = 'none';
     document.querySelector('.navbar-mobile').classList.add('visible');
+    document.querySelector('.navbar-container').classList.add('visible');
     document.querySelector('.main-container').style.display = 'block';
     document.querySelector('.footer').style.display = 'flex';
     maximumScroll = document.body.offsetHeight - window.innerHeight + 50;
