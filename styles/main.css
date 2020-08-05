@@ -136,11 +136,15 @@ body {
     z-index: 1001;
     display: flex;
     flex-wrap: wrap;
-    transition: left 0.6s;
+    transition: left .6s;
     transition-timing-function: cubic-bezier(0,0,.54,-0.15);
 }
 .overlay-container.open {
     left: 0;
+    opacity: 1;
+}
+.overlay-container.open .overlay-menu-item {
+    opacity: 1;
 }
 .overlay-menu {
     flex-grow: 2;
@@ -150,9 +154,35 @@ body {
     background-color: var(--third-color);
 }
 .overlay-menu-item {
+    opacity: 0;
     cursor: pointer;
     margin-bottom: 15px;
     color: #fff;
+    transition: opacity .3s;
+    transition-delay: 0.7s;
+}
+.overlay-logo {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    font-family: Regular Oswald;
+    font-size: 15px;
+    margin: 0 0 5em 1em ;
+    z-index: 15;
+    bottom: 0;
+}
+.overlay-logo::before {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border: solid #fff 1px;
+    border-radius: 100%;
+    transition: all 0.2s;
 }
 .overlay-close {
     background-color: var(--main-color);
