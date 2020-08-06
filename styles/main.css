@@ -1,4 +1,4 @@
-* {
+p* {
     box-sizing: border-box;
 }
 :root {
@@ -629,5 +629,23 @@ nav {
     .footer-rights {
         flex-grow: 3;
         flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .project {
+        grid-template-rows: repeat(4, minmax(150px, auto));
+    }
+    .project-name {
+        font-size: 24px;
+    }
+    .project-description {
+        font-size: 20px;
+    }
+    .about .txt, .skills .txt {
+        font-size: 20px;
+    }
+    .footer {
+        padding: 1.5em 3em;
     }
 }
