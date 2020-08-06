@@ -1,4 +1,4 @@
-p* {
+* {
     box-sizing: border-box;
 }
 :root {
@@ -642,10 +642,46 @@ nav {
     .project-description {
         font-size: 20px;
     }
+    .experiments-container {
+        flex-wrap: wrap;
+    }
+    .experiment {
+        padding: 4em 2em;
+        flex-basis: 50%;
+        text-align: center;
+        min-height: 300px;
+    }
     .about .txt, .skills .txt {
         font-size: 20px;
     }
     .footer {
         padding: 1.5em 3em;
+    }
+}
+
+@media (max-width: 400px) {
+    .overlay-menu {
+        font-size: 20px;
+    }
+    .first-line {
+        font-size: 30px;
+    }
+    .rest-of-txt {
+        font-size: 24px;
+    }
+    .project-description {
+        padding: 0.8 0 1.2em 0;
+    }
+    .footer {
+        padding: 1em 0 ;
+    }
+    .footer-menu, .footer-contact, .footer-online, .footer-rights {
+        padding: 0.4em 0;
+    }
+    .footer-title {
+        font-size: 20px;
+    }
+    .footer-txt {
+        font-size: 16px;
     }
 }
