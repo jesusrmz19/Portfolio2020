@@ -154,20 +154,23 @@ body {
     background-color: var(--third-color);
 }
 .overlay-menu-item {
+    display: block;
     opacity: 0;
     cursor: pointer;
     margin-bottom: 15px;
     color: #fff;
     transition: opacity .3s;
     transition-delay: 0.7s;
+    text-decoration: none;
 }
+
 .overlay-logo {
     color: white;
     display: inline-block;
     position: absolute;
     font-family: Regular Oswald;
     font-size: 15px;
-    margin: 0 0 5em 1em ;
+    margin: 0 0 15em 1em ;
     z-index: 15;
     bottom: 0;
 }
@@ -435,6 +438,7 @@ body {
     flex-direction: column;
 }
 .footer-header {
+    display: none;
     font-family: Regular Oswald;
     letter-spacing: 1.2px;
     font-size: 24px;
@@ -605,6 +609,7 @@ nav {
         padding: 0 3em;
     }
     .footer-header {
+        display: block;
         flex-grow: 3;
         flex-basis: 100%;
         padding: 1.5em 0;
