@@ -520,6 +520,7 @@ nav {
     font-size: 14px;
     cursor: pointer;
     transition: color .15s, border-bottom .15s;
+    text-decoration: none;
 }
 .navbar-container ul li a:hover {
     color: var(--secondary-color);
