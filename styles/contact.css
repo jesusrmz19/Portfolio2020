@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+    font-family: Regular Sarabun;
+    src: url(/Fonts/Sarabun/Sarabun-Regular.ttf);
+}
+@font-face {
+    font-family: Bold Sarabun;
+    src: url(/Fonts/Sarabun/Sarabun-Bold.ttf);
+}
+@font-face {
+    font-family: Light Sarabun;
+    src: url(/Fonts/Sarabun/Sarabun-Light.ttf);
+}
+@font-face {
+    font-family: Regular Oswald;
+    src: url(/Fonts/Oswald/static/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: Light Oswald;
+    src: url(/Fonts/Oswald/static/Oswald-Light.ttf);
+}
+h1 {
+    font-family: Bold Sarabun;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-family: Light Sarabun;
+    font-weight: 400;
+    margin: 5px 0 25px 0;
+    padding: 0;
+}
+.form {
+    width: 550px;
+    box-shadow: 0px 3px 10px #c3c3c3;
+    padding: 1.4em 1.8em;
+    font-family: Regular Sarabun;
+}
+.input {
+    padding: 0.6em 0.4em;
+    width: 100%;
+    margin: 8px 2px;
+    border-radius: 3px;
+    border: none;
+    background-color: #e7e7e7;
+}
+.input.short {
+    width: 49%;
+}
+.submit {
+    border-radius: 3px;
+    font-family: Bold Sarabun;
+    letter-spacing: 1px;;
+    padding: 0.8em 1em;
+    border: none;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: rgb(59, 182, 59);
+    color: white;
+    border: none;
+}
+textarea::placeholder{
+    font-family: Regular Sarabun;
+}
+
