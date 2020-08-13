@@ -21,11 +21,7 @@ function handleClickMobileLink(event) {
     document.querySelector('.overlay-container').classList.toggle('open');
     setTimeout(function(){
         let toSection = event.target.dataset.block;
-        if (toSection == 'contact') {
-            window.scroll({ top: maximumScroll, behavior: "smooth" });
-        }else{
-            document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
-        }
+        document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
     },650);
 }
 document.querySelector('.close_btn').addEventListener('click', openMobileMenu);
@@ -37,11 +33,7 @@ document.querySelectorAll('.overlay-menu-item').forEach((link) => {
 /* Desktop Menu */
 function handleClickDesktopLink(event) {
     let toSection = event.target.dataset.block;
-    if (toSection == 'contact') {
-        window.scroll({ top: maximumScroll, behavior: "smooth" });
-    }else{
-        document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
-    }
+    document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
 }
 document.querySelectorAll('.desktop-menu-link').forEach((link) => {
     link.addEventListener('click', handleClickDesktopLink);

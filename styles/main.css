@@ -426,6 +426,63 @@ body {
 .skills .subtxt {
     font-size: 14px;
 }
+/* ---- CONTACT ----- */
+.contact {
+    position: relative;
+    background-color: var(--fourth-color);
+}
+.contact .section-subtitle{
+    width: 80%;
+    margin: auto;
+}
+.contact .section-subtitle a {
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.contact .section-subtitle a:hover {
+    color: var(--secondary-color);
+}
+.form-container {
+    padding-bottom: 55px;
+    width: 85%;
+    margin: auto;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    font-family: Light Sarabun;
+    background-color: var(--third-color);
+    padding: 0.8em 1em;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    color: white;
+}
+.input:focus {
+    border: 2px var(--secondary-color);
+    border-radius: 0px;
+}
+.input::placeholder {
+    color: rgba(255,255,255,0.8);
+}
+.submit {
+    margin-top: 15px;
+    font-family: Bold Sarabun;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--main-color);
+    color: white;
+    transition: background .3s;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+}
+.submit:hover {
+    background-color: var(--secondary-color);
+}
 /*----- FOOTER ----- */
 .footer {
     position: sticky;
@@ -602,6 +659,41 @@ nav {
         padding: 5em 4em;
         margin: 0;
     }
+    .form-container {
+        width: 60%;
+    }
+    .form {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    .input {
+        margin: 0;
+    }
+    .input.left {
+        grid-column: 1/7;
+        height: 70px;
+    }
+    input [name="name"]{
+        grid-row: 1;
+    }
+    input [name="email"]{
+        grid-row: 2;
+    }
+    input [name="company"]{
+        grid-row: 3;
+    }
+    .input.msg {
+        grid-column: 7/-1;
+        grid-row: 1 /span 2;
+    }
+    .submit {
+        grid-column: 7/-1;
+        grid-row: 3;
+        height: 70px;
+        margin: 0;
+    }
     .footer {
         flex-direction: row;
         flex-wrap: wrap;
@@ -653,6 +745,19 @@ nav {
     }
     .about .txt, .skills .txt {
         font-size: 20px;
+    }
+    .contact .section-subtitle {
+        padding-bottom: 50px;
+    }
+    .form-container {
+        padding-bottom: 70px;
+    }
+    .form {
+        column-gap: 18px;
+        row-gap: 18px;
+    }
+    .input.left, .submit {
+        height: 80px;
     }
     .footer {
         padding: 1.5em 3em;
