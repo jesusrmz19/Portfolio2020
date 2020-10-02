@@ -5,7 +5,6 @@ function loading() {
 }
 function showPage() {
     document.querySelector('.loader').style.display = 'none';
-    AOS.init();
     document.querySelector('.navbar-mobile').classList.add('visible');
     document.querySelector('.navbar-container').classList.add('visible');
     document.querySelector('.main-container').style.display = 'block';
