@@ -87,6 +87,13 @@ body {
     0% { transform: rotate(0deg); }
     100% {transform: rotate(360deg);}
 }
+
+#msg {
+    display: none;
+    text-align: center; 
+    color: white; 
+    font-family: Bold Sarabun;
+}
 /* ----- MOBILE MENU BTN ----- */
 .navbar-mobile {
     display: none;
