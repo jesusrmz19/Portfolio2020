@@ -475,6 +475,15 @@ body {
 .input::placeholder {
     color: rgba(255,255,255,0.8);
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: var(--third-color) !important;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
 .submit {
     margin-top: 15px;
     font-family: Bold Sarabun;
@@ -700,6 +709,10 @@ nav {
         grid-row: 3;
         height: 70px;
         margin: 0;
+    }
+    .recaptcha {
+        grid-column: 1/-1;
+        justify-self: center;
     }
     .footer {
         flex-direction: row;
