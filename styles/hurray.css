@@ -20,28 +20,12 @@ body {
 }
 @font-face {
     font-family: Regular Sarabun;
-    src: url(/Fonts/Sarabun/Sarabun-Regular.ttf);
-}
-@font-face {
-    font-family: Bold Sarabun;
-    src: url(/Fonts/Sarabun/Sarabun-Bold.ttf);
-}
-@font-face {
-    font-family: Light Sarabun;
-    src: url(/Fonts/Sarabun/Sarabun-Light.ttf);
-}
-@font-face {
-    font-family: Regular Oswald;
-    src: url(/Fonts/Oswald/static/Oswald-Regular.ttf);
-}
-@font-face {
-    font-family: Light Oswald;
-    src: url(/Fonts/Oswald/static/Oswald-Light.ttf);
+    src: url(/src/Fonts/Sarabun/Sarabun-Regular.ttf);
 }
 .container {
     width: 85%;
     max-width: 550px;
-    height: 200px;
+    max-height: 350px;
     background-color: var(--secondary-color);
     color: var(--fourth-color);
     box-shadow: 0 5px 10px rgba(255,129,37,.2);
@@ -49,14 +33,20 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: Regular Sarabun;
+    padding: 3em 0;
 }
 h1 {
-    font-family: Bold Sarabun;
+    font-size: 45px;
     text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
 }
-h5 {
-    font-family: Regular Sarabun;
+p{
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0;
 }
-.logo {
-    margin-top: 40px;
+a {
+    color: white;
 }

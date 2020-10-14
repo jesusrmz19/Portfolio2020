@@ -19,23 +19,23 @@ body {
 }
 @font-face {
     font-family: Regular Sarabun;
-    src: url(/Fonts/Sarabun/Sarabun-Regular.ttf);
+    src: url(/src/Fonts/Sarabun/Sarabun-Regular.ttf);
 }
 @font-face {
     font-family: Bold Sarabun;
-    src: url(/Fonts/Sarabun/Sarabun-Bold.ttf);
+    src: url(/src/Fonts/Sarabun/Sarabun-Bold.ttf);
 }
 @font-face {
     font-family: Light Sarabun;
-    src: url(/Fonts/Sarabun/Sarabun-Light.ttf);
+    src: url(/src/Fonts/Sarabun/Sarabun-Light.ttf);
 }
 @font-face {
     font-family: Regular Oswald;
-    src: url(/Fonts/Oswald/static/Oswald-Regular.ttf);
+    src: url(/src/Fonts/Oswald/static/Oswald-Regular.ttf);
 }
 @font-face {
     font-family: Light Oswald;
-    src: url(/Fonts/Oswald/static/Oswald-Light.ttf);
+    src: url(/src/Fonts/Oswald/static/Oswald-Light.ttf);
 }
 .error-container {
     width: 100%;
@@ -250,7 +250,7 @@ body {
 .first-fold {
     position: relative;
     background-color: var(--main-color);
-    background: url(/images/firstfold-background.jpg);
+    background: url(/src/images/firstfold-background.jpg);
     background-position: center;
     width: 100%;
     height: 100vh;
@@ -386,22 +386,22 @@ body {
     cursor: pointer;
 }
 .day-n-night {
-    background: url(/images/Day_Night_Switch.jpg) center;
+    background: url(/src/images/Day_Night_Switch.jpg) center;
     background-size: 200%;
     box-shadow: 0px 5px 25px rgba(0,0,0,0.25);
 }
 .panda {
-    background: url(/images/Panda.jpg) center;
+    background: url(/src/images/Panda.jpg) center;
     background-size: 150%;
     box-shadow: 0px 5px 25px rgba(0,0,0,0.25);
 }
 .navbar-animation {
-    background: url(/images/navbar_animation.jpg) center;
+    background: url(/src/images/navbar_animation.jpg) center;
     background-size: 130%;
     box-shadow: 0px 5px 25px rgba(0,0,0,0.25);
 }
 .full-page-menu {
-    background: url(/images/full_page_menu.jpg) center;
+    background: url(/src/images/full_page_menu.jpg) center;
     background-size: 120%;
     box-shadow: 0px 5px 25px rgba(0,0,0,0.25);
 }
