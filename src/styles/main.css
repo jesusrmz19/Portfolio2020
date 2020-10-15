@@ -53,41 +53,6 @@ body {
     z-index: 3;
     position: relative;
 }
-/* ----- LOADER ----- */
-.loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Regular Oswald;
-    z-index: 99;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 30px;
-    width: 100px;
-    height: 100px;
-    color: var(--secondary-color);
-    border-radius: 100%;
-}
-.loader::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -5px;
-    transform: rotate(45deg);
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    border: 5px solid rgba(0,0,0,0.25);
-    border-top: 5px solid var(--secondary-color);
-    animation: spin 2s linear infinite;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% {transform: rotate(360deg);}
-}
-
 #success {
     display: none;
     text-align: center;
@@ -96,15 +61,12 @@ body {
 }
 /* ----- MOBILE MENU BTN ----- */
 .navbar-mobile {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 50;
     padding: 0.4em;
-}
-.navbar-mobile.visible {
-    display: block;
 }
 .mobile-menu-btn {
     position: relative;
@@ -242,6 +204,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: opacity .3s;
+    border: solid 1px var(--main-color);
 }
 .go_up_btn.visible {
     opacity: 1;
@@ -501,6 +464,7 @@ input:-webkit-autofill {
 }
 /*----- FOOTER ----- */
 .footer {
+    display: block;
     position: sticky;
     bottom: 0;
     left: 0;
@@ -571,7 +535,7 @@ nav {
     margin: 0;
 }
 .navbar-container {
-    display: none;
+    display: block;
     padding: 1.2em 3em;
     z-index: 1001;
     position: absolute;
@@ -626,10 +590,10 @@ nav {
     transition: all 0.2s;
 }
 @media (min-width: 1200px) {
-    .navbar-mobile.visible {
+    .navbar-mobile {
         display: none;
     }
-    .navbar-container.visible {
+    .navbar-container {
         display: flex;
     }
     .first-fold {
@@ -721,6 +685,7 @@ nav {
     }
     .footer-header {
         display: block;
+        margin: 0;
         flex-grow: 3;
         flex-basis: 100%;
         padding: 1.5em 0;
@@ -739,6 +704,7 @@ nav {
         margin: 0;
     }
     .footer-rights {
+        margin: 0;
         flex-grow: 3;
         flex-basis: 100%;
     }

@@ -45,6 +45,10 @@ function cssTask() {
     .pipe(dest('dist/assets/css'));
 }
 
+function fontsTask() {
+    return src('src/Fonts/**/*').pipe(gulp.dest('dist/assets/fonts'));
+}
+
 function watchTask() {
     watch([cssPath, jsPath], { interval: 1000 }, parallel(cssTask, jsTask));
 }
@@ -52,4 +56,4 @@ function watchTask() {
 exports.exportDocs = exportDocs;
 exports.cssTask = cssTask;
 exports.jsTask = jsTask;
-exports.default = series(parallel(copyIndex, copySuccess, imgTask, jsTask, cssTask, exportDocs),watchTask);
+exports.default = series(parallel(copyIndex, copySuccess, imgTask, jsTask, cssTask, fontsTask, exportDocs),watchTask);
