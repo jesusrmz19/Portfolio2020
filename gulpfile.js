@@ -53,9 +53,8 @@ function watchTask() {
     watch([cssPath, jsPath], { interval: 1000 }, parallel(cssTask, jsTask));
 }
 
-gulp.task('build', function() {
-    return 'gulp build';
-})
+gulp.task("build", ["copyIndex", "copySucess", "imgTask", "fontsTask", "cssTask", "jsTask", "exportDocs"]);
+gulp.task("build-preview", ["copyIndex", "copySucess", "imgTask", "fontsTask", "cssTask", "jsTask", "exportDocs"]);
 
 exports.exportDocs = exportDocs;
 exports.cssTask = cssTask;
