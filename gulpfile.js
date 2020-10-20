@@ -26,7 +26,7 @@ function imgTask() {
 function jsTask() {
     return src(jsPath)
     .pipe(sourcemaps.init())
-    .pipe(concat('all.js'))
+    .pipe(concat('main.js'))
     .pipe(terser())
     .pipe(sourcemaps.write('.'))
     .pipe(dest('dist/assets/js'));
@@ -35,7 +35,7 @@ function jsTask() {
 function cssTask() {
     return src(cssPath)
     .pipe(sourcemaps.init())
-    .pipe(concat('all.css'))
+    .pipe(concat('main.css'))
     .pipe(postcss([cssnano()]))
     .pipe(sourcemaps.write('.'))
     .pipe(dest('dist/assets/css'));
