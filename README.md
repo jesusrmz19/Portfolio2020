@@ -8,4 +8,4 @@ This portfolio includes the following:
 - JavaScript
 - Gulp
 
-![My logo](/images/logo.png)
+![My logo](/src/images/logo.png)
