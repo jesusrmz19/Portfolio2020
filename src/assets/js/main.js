@@ -44,3 +44,8 @@ function showUpBtn() {
     }
 }
 window.addEventListener('scroll', showUpBtn);
+
+/* GSAP FUNCTIONALITY */
+gsap.from(".first-fold-txt", {duration: 1, x: -300, opacity: 0});
+gsap.from(".first-fold-btn", {duration: 1, x: -300, opacity: 0});
+
