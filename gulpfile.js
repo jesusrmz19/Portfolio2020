@@ -1,3 +1,19 @@
+const browserSync = require('browser-sync').create();
+
+function watch() {
+    browserSync.init({
+        server: {
+            baseDir: 'src'
+        }
+    });
+    gulp.watch('src/assets/css/**/*.css').on('change', browserSync.reload);
+    gulp.watch('src/*html').on('change', browserSync.reload);
+    gulp.watch('src/assets/js/**/*.js').on('change', browserSync.reload);
+}
+
+exports.watch = watch;
+
+
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
