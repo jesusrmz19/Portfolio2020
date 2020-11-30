@@ -450,6 +450,7 @@ input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
 }
 .submit {
+    -webkit-appearance: none;
     margin-top: 15px;
     font-family: Bold Sarabun;
     padding: 0.8em 1em;
