@@ -268,6 +268,7 @@ body {
 }
 .project {
     padding: 3em 2em;
+    overflow: hidden;
 }
 .project-img {
     width: 100%;
@@ -373,6 +374,7 @@ body {
     background-color: var(--main-color);
     color: #fff;
     position: relative;
+    overflow: hidden;
 }
 .about, .skills {
     margin: auto;
