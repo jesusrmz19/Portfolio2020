@@ -599,6 +599,10 @@ nav {
     .navbar-container {
         display: flex;
     }
+    .section-title {
+        font-size: 30px;
+        padding-top: 55px;
+    }
     .first-fold {
         padding: 0 8em;
         align-items: flex-start;
