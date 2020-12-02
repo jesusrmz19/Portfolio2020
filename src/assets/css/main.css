@@ -588,7 +588,6 @@ nav {
         padding: 2em 2.5em;
         width: 85%;
         margin: 0 auto;
-        border: solid 1px red;
     }
     .project-img {
         grid-column: 1/7;
