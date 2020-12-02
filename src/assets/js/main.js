@@ -74,19 +74,23 @@ ScrollTrigger.create({
 
 
 /* Mobile Menu */
+const mobileMenuBtn = document.querySelectorAll('.bar');
+const menuOverlay = document.querySelector('.menuoverlay--container');
+
 function openMobileMenu() {
-    document.querySelector('.overlay-container').classList.toggle('open');
+    mobileMenuBtn.forEach(bar => bar.classList.toggle('active'));
+    menuOverlay.classList.toggle('open');
 }
 function handleClickMobileLink(event) {
-    document.querySelector('.overlay-container').classList.toggle('open');
+    mobileMenuBtn.forEach(bar => bar.classList.toggle('active'));
+    menuOverlay.classList.toggle('open');
     setTimeout(function(){
         let toSection = event.target.dataset.block;
         document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
     },650);
 }
-document.querySelector('.close_btn').addEventListener('click', openMobileMenu);
 document.querySelector('.mobile-menu-btn').addEventListener('click', openMobileMenu);
-document.querySelectorAll('.overlay-menu-item').forEach((link) => {
+document.querySelectorAll('.menuoverlay--item').forEach((link) => {
     link.addEventListener('click', handleClickMobileLink);
 });
 
