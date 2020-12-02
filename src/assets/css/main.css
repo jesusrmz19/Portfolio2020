@@ -609,6 +609,7 @@ nav {
         grid-column: 8/12;
         grid-row: 3;
         align-self: center;
+        font-size: 22px;
     }
     .project-btns {
         grid-column: 8/12;
