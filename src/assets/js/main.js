@@ -14,12 +14,14 @@ projects.forEach((self) => {
     let projectImg = self.querySelectorAll('.project-img');
     let projectName = self.querySelectorAll('.project-name');
     let projectDesc = self.querySelectorAll('.project-description');
+    let projectUses = self.querySelectorAll('.project-uses');
     let projectBtns = self.querySelectorAll('.project-btns');
     let projectTl = gsap.timeline();
 
     projectTl.from(projectImg, {duration: 0.5, x: -100, opacity: 0})
     .from(projectName, {duration: 0.4, x: 100, opacity: 0}, "-=0.20")
     .from(projectDesc, {duration: 0.4, x: 100, opacity: 0}, "-=0.20")
+    .from(projectUses, {duration: 0.4, x: 100, opacity: 0}, "-=0.20")
     .from(projectBtns, {duration: 0.4, x: 100, opacity: 0}, "-=0.20");
 
     ScrollTrigger.create({
