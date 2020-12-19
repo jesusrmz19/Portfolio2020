@@ -19,26 +19,26 @@
     max-width: 300px;
     margin: 15px 0;
 }
-.about, .skills {
+.about, .skills--about {
     margin: auto;
     width: 85%;
     padding: 55px 0 25px 0;
 }
-.skills {
+.skills--about {
     padding: 0 0 25px 0;
 }
-.about .title, .skills .title {
+.about .title, .skills--about .title {
     font-family: Bold Sarabun;
     font-size: 26px
 }
-.about .txt, .skills .txt{
+.about .txt, .skills--about .txt{
     font-family: Light Sarabun;
     font-size: 16px;
     padding: 0.8em 0 1em 0;
     text-align: justify;
     line-height: 140%;
 }
-.skills .subtxt {
+.skills--about .subtxt {
     font-size: 14px;
 }
 .technologies {
@@ -68,7 +68,7 @@
         margin: 0 auto;
         padding: 80px 0;
     }
-    .about, .skills {
+    .about, .skills--about {
         padding: 0;
         width: 100%;
     }
@@ -97,20 +97,20 @@
         align-self: center;
     }
     
-    .skills {
+    .skills--about {
         margin-top: 50px;
         display: grid; 
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto auto auto;
         gap: 20px;
     }
-    .skills .title {
+    .skills--about .title {
         font-size: 30px;
         grid-column: 1/7;
         grid-row: 1;
         text-align: left;
     }
-    .skills .technologies--txt {
+    .skills--about .technologies--txt {
         grid-row: 2; 
         grid-column: 1/7;
     }
@@ -124,7 +124,7 @@
     .tech--logo {
         font-size: 55px;
     }
-    .skills .other--txt {
+    .skills--about .other--txt {
         grid-column: 7/-1;
         grid-row: 2/span 3;
     }
@@ -152,14 +152,14 @@
     .about .txt {
         font-size: 18px;
     }
-    .skills {
+    .skills--about {
         gap: 30px;
         margin-top: 80px;
     }
-    .skills .txt {
+    .skills--about .txt {
         font-size: 18px;
     }
-    .skills .title {
+    .skills--about .title {
         grid-column: 1/-1;
         justify-self: center;
         align-self: center;
