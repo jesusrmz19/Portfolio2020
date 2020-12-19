@@ -27,7 +27,7 @@ projects.forEach((self) => {
     ScrollTrigger.create({
         animation: projectTl,
         trigger: self,
-        start: "20% 50%",
+        start: "20% 75%"
     });
 
 });
@@ -37,7 +37,7 @@ experiments.forEach((self) => {
     gsap.from(self, {
         scrollTrigger: {
             trigger: self,
-            start: "top 75% "
+            start: "-20% 75% "
         },
         opacity: 0,
         y: 150,
@@ -55,9 +55,9 @@ gsap.from(".about", {
     x: -100,
     duration: 0.6
 });
-gsap.from(".skills", {
+gsap.from(".skills--container", {
     scrollTrigger: {
-        trigger: ".skills",
+        trigger: ".skills--container",
         start: "top: 60%"
     },
     opacity: 0,
@@ -86,6 +86,9 @@ function openMobileMenu() {
 function handleClickMobileLink(event) {
     mobileMenuBtn.forEach(bar => bar.classList.toggle('active'));
     menuOverlay.classList.toggle('open');
+    if(toSection == 'about') {
+        return;
+    }
     setTimeout(function(){
         let toSection = event.target.dataset.block;
         document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
@@ -99,6 +102,9 @@ document.querySelectorAll('.menuoverlay--item').forEach((link) => {
 /* Desktop Menu */
 function handleClickDesktopLink(event) {
     let toSection = event.target.dataset.block;
+    if(toSection == 'about') {
+        return;
+    }
     document.getElementById(toSection).scrollIntoView({ behavior: 'smooth'});
 }
 document.querySelectorAll('.desktop-menu-link').forEach((link) => {
