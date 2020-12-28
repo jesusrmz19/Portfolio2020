@@ -59,6 +59,34 @@
     margin-top: 8px;
 }
 
+.resume--container {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    padding: 1.5em;
+    margin-bottom: 30px;
+}
+.about--resume {
+    display: inline-block;
+    padding: 0.8em 1.8em;
+    outline: solid 1px #fff;
+    background-color: var(--main-color);
+    font-family: Bold Sarabun;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    transition: background-color .3s, outline .3s;
+    cursor: pointer;
+    z-index: 55;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.about--resume:hover, .about--resume:active {
+    background-color: var(--secondary-color);
+    outline: none;
+}
+
 
 @media (min-width: 1200px) {
     .about-n-skills {
@@ -66,7 +94,7 @@
         flex-direction: column;
         width: 75%;
         margin: 0 auto;
-        padding: 80px 0;
+        padding-top: 80px;
     }
     .about, .skills--about {
         padding: 0;
@@ -128,11 +156,14 @@
         grid-column: 7/-1;
         grid-row: 2/span 3;
     }
+    .about--resume {
+        max-width: 180px;
+    }
 }
 
 @media (min-width: 1600px) {
     .about-n-skills {
-        padding: 150px 0;
+        padding-top: 150px;
     }
     .about {
         gap: 30px;
@@ -165,5 +196,8 @@
         align-self: center;
         grid-row: 1;
         font-size: 45px;
+    }
+    .resume--container {
+        margin-bottom: 50px;
     }
 }
