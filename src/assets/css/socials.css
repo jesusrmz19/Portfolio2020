@@ -92,7 +92,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 2em ;
-    gap: 25px;
 }
 .socpage--socials--items {
     display: block;
@@ -102,6 +101,9 @@
     font-size: 18px;
     text-decoration: none;
     transition: color .2s, text-decoration .2s;
+}
+.socpage--socials--items + .socpage--socials--items {
+    margin-left: 25px;
 }
 .socpage--socials--items:hover {
     cursor: pointer;
