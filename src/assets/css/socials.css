@@ -91,7 +91,8 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    padding-top: 2em ;
+    padding-top: 2.5em ;
+    padding-bottom: 0.5em;
 }
 .socpage--socials--items {
     display: block;
