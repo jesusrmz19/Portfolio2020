@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+.socpage--container {
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.socpage--img--container {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: url("../../images/profile_picture.jpg") center;
+    background-size: cover;
+}
+
+.socpage--txt--tag {
+    font-family: Bold Sarabun;
+    font-size: 18px;
+    color: white;
+    margin-top: 15px;
+}
+
+.socpage--txt--desc {
+    color: var(--secondary-color);
+    font-family: Regular Sarabun;
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.socpage--acepting--container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.socpage--acepting--container p {
+    display: inline-block;
+    padding: 0.8em 1.8em;
+    outline: solid 1px #fff;
+    background-color: var(--secondary-color);
+    font-family: Bold Sarabun;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    z-index: 55;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.socpage--btn--container {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--fourth-color);
+    border-bottom: 1px solid var(--fourth-color);
+    width: 80%;
+    padding: 30px 0;
+}
+.socpage--btn {
+    display: inline-block;
+    padding: 0.8em 1.8em;
+    outline: solid 1px #fff;
+    background-color: var(--main-color);
+    font-family: Bold Sarabun;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    transition: background-color .3s, outline .3s;
+    cursor: pointer;
+    z-index: 55;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.socpage--btn:hover, .socpage--btn:active {
+    background-color: var(--secondary-color);
+    outline: none;
+}
+
+.socpage--socials--container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em ;
+    gap: 25px;
+}
+.socpage--socials--items {
+    display: block;
+    color: rgba(255,255,255,0.65);
+    padding: 0 0 0.4em 0;
+    font-family: Light Sarabun;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color .2s, text-decoration .2s;
+}
+.socpage--socials--items:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.socpage--footer {
+    margin: 0 auto;
+    max-width: 375px;
+    background-color: var(--third-color);
+    color: white;
+    font-size: 16px;
+    font-family:  Light Sarabun;
+    text-align: center;
+    padding: 1.2em 0;
+}
