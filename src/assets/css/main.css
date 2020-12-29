@@ -20,22 +20,27 @@ body {
 @font-face {
     font-family: Regular Sarabun;
     src: url(../fonts/Sarabun/Sarabun-Regular.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: Bold Sarabun;
     src: url(../fonts/Sarabun/Sarabun-Bold.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: Light Sarabun;
     src: url(../fonts/Sarabun/Sarabun-Light.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: Regular Oswald;
     src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: Light Oswald;
     src: url(../fonts/Oswald/static/Oswald-Light.ttf);
+    font-display: swap;
 }
 .error-container {
     width: 100%;
