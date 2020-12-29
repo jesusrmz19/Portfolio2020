@@ -182,7 +182,7 @@ body {
 .first-fold {
     position: relative;
     background-color: var(--main-color);
-    background: url(../../images/FF-Background.svg);
+    background: url(../../images/firstfold-background.jpg);
     background-position: center;
     width: 100%;
     height: 100vh;

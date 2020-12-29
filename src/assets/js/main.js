@@ -3,11 +3,6 @@ var maximumScroll;
 
 /* GSAP FUNCTIONALITY */
 gsap.registerPlugin(ScrollTrigger);
-const firstFoldTl = gsap.timeline(); 
-window.addEventListener('load', function () {
-    firstFoldTl.from(".first-fold-txt", {duration: 0.8, x: -200, opacity: 0})
-    .from(".first-fold-btn", {duration: 0.4, y: 100, opacity: 0}, "-=0.20"); 
-})
 
 const projects = gsap.utils.toArray('.project');
 projects.forEach((self) => {
