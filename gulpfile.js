@@ -73,4 +73,4 @@ exports.cssTask = cssTask;
 exports.jsTask = jsTask;
 exports.fontsTask = fontsTask;
 
-exports.build = parallel(buildHTML, cssTask, imgTask, jsTask, exportDocs, fontsTask);
+exports.build = parallel(buildHTML, cssTask, jsTask, exportDocs, fontsTask);
