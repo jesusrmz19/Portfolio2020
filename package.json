@@ -2,7 +2,7 @@
   "name": "portfolio-code",
   "version": "1.0.0",
   "description": "Personal Portfolio",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
