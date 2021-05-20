@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:title" content="Web Developer | Jesús Ramírez | JavaScript | React">
+    <meta name="twitter:description" content="I'm a self-taught web developer, designer and freelancer based in Guadalajara, Mexico. I use React, JavaScript, SASS, Gulp, and regular HTML & CSS to create cool webiste 😎">
+    <meta name="twitter:image" content="04897a42af1d774aa74d5b44635896b7">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jesusrmz.com/">
+    <meta property="og:title" content="Web Developer | Jesús Ramírez | JavaScript | React">
+    <meta property="og:description" content="I'm a self-taught web developer, designer and freelancer based in Guadalajara, Mexico. I use React, JavaScript, SASS, Gulp, and regular HTML & CSS to create cool webiste 😎">
+    <meta property="og:image" content="04897a42af1d774aa74d5b44635896b7">
+    <link rel="stylesheet" href="746e0f2a09fba4b8d2f5a677a0349d15">
+    <link rel="icon" href="89bfce2cc739c76262d5ae795691f77a">
+    <title>Jesús Rmz</title>
+    <meta name="description" content="I'm a self-taught web developer, designer and freelancer based in Guadalajara, Mexico. I use React, JavaScript, SASS, Gulp, and regular HTML & CSS to create cool webiste 😎">
+  </head>
+  <body>
+    <div class="go_up_btn">UP</div>
+    <nav class="navbar-container">
+      <div class="navbar-logo">JRM</div>
+      <ul>
+        <li><a class="desktop-menu-link" data-block="projects">PROJECTS</a></li>
+        <li>
+          <a class="desktop-menu-link" data-block="experiments">EXPERIMENTS</a>
+        </li>
+        <li><a class="desktop-menu-link" data-block="contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar-mobile">
+      <div class="mobile-menu-btn">
+        <div class="bar bar--up"></div>
+        <div class="bar bar--down"></div>
+      </div>
+    </nav>
+    <div class="menuoverlay--container">
+      <div class="menuoverlay--menu">
+        <a class="menuoverlay--item" data-block="projects">PROJECTS</a>
+        <a class="menuoverlay--item" data-block="experiments">EXPERIMENTS</a>
+        <a class="menuoverlay--item" data-block="contact">CONTACT</a>
+      </div>
+      <div class="menuoverlay--btn">
+        <a href="ba6242543ad6c6755f2f7cef9ac04859" class="hero-btn">EMAIL ME</a>
+      </div>
+      <div class="menuoverlay--links">
+        <a href="f69eb9c89384212a9fe258dd9558864b" target="_blank" class="footer-txt footer-link">Twitter</a>
+        <a href="c64de2c0a6941fe9abd278c9a2e27989" target="_blank" class="footer-txt footer-link">LinkedIn</a>
+        <a href="aabdde9b7c9ae7bf3b60ec3b482de29f" target="_blank" class="footer-txt footer-link">Codepen</a>
+        <a href="cecd72dc10544484bed7580ff53b415f" target="_blank" class="footer-txt footer-link">Github</a>
+        <a href="f0794fa9ac7e069bd826947c8223139e" target="_blank" class="footer-txt footer-link">Behance</a>
+      </div>
+    </div>
+    <main class="main-container">
+      <section class="first-fold">
+        <div class="first-fold-txt">
+          <p class="first-line">
+            Hola, my name is <span class="orange-txt">Jesús</span> 👋🏼.
+          </p>
+          <p class="rest-of-txt">
+            I'm a self-taught web developer that uses
+            <span class="orange-txt">React </span>,
+            <span class="orange-txt">JavaScript</span> and regular
+            <span class="orange-txt">CSS </span> &
+            <span class="orange-txt">HTML </span>
+            to build cool things.
+          </p>
+        </div>
+        <div class="first-fold-btn">
+          <a class="hero-btn desktop-menu-link" data-block="projects">EXPLORE WORK</a>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="section-title">Latest Work</div>
+        <div class="project" data-project="">
+          <div class="project-img">
+            <img src="ea5c4cadac4f0a2c1639530a536c3a56" alt="Hubble Thumbnail">
+          </div>
+          <p class="project-name">Hubble Real Estate</p>
+          <div class="project-description">
+            The project was designed by
+            <a href="cad086710440b0bcaf76a9a581021d8d" target="_blank">Metamorfosis</a>. I made the full developement of this website from scratch and
+            without any frameworks. The website works good at desktop level, as
+            the customer went bankrupt before finishing the project.
+          </div>
+          <div class="project-uses">
+            <i class="fab fa-html5" alt="html-logo"></i>
+            <i class="fab fa-css3-alt" alt="css-logo"></i>
+            <i class="fab fa-js" alt="js-logo"></i>
+          </div>
+          <div class="project-btns">
+            <a class="project-btn" href="378fabfb9ec0adf10eeaf6973404fa86" target="_blank">LIVE PAGE</a>
+          </div>
+        </div>
+        <div class="project" data-project="1">
+          <div class="project-img project-expresa">
+            <picture>
+              <source type="image/webp" srcset="abdda08dff0802ce57009ac4e8f9f519">
+              <source type="image/png" srcset="38b13f86d1c298b3747c476cf251d80a">
+              <img src="38b13f86d1c298b3747c476cf251d80a" alt="Termica Soluciones First Fold">
+            </picture>
+          </div>
+          <p class="project-name">Térmica Soluciones</p>
+          <div class="project-description">
+            With the design made by
+            <a href="cad086710440b0bcaf76a9a581021d8d" target="_blank">Metamorfosis</a>, I developed this one-page website for an up and coming company
+            that specializes in thermal solutions. Their main objective with
+            this webiste was to have a place where their customers could find
+            all their services, and contact information.
+          </div>
+          <div class="project-uses">
+            <i class="fab fa-html5" alt="html-logo"></i>
+            <i class="fab fa-sass" alt="scss-logo"></i>
+            <i class="fab fa-js" alt="js-log"></i>
+            <i class="fab fa-gulp" alt="gulp-logo"></i>
+          </div>
+          <div class="project-btns">
+            <a class="project-btn" href="792f2e87f525f9a097f804dc371ca9fe" target="_blank">LIVE PAGE</a>
+          </div>
+        </div>
+        <div class="project" data-project="">
+          <div class="project-img">
+            <img src="c054dae81a2f29062d6ba3ede2c0ed3a" alt="StarWars SPA">
+          </div>
+          <p class="project-name">Star Wars SPA</p>
+          <div class="project-description">
+            I designed and still developing this Single Page Application to work
+            in my React skills and show off my love for the Star Wars saga.
+          </div>
+          <div class="project-uses">
+            <i class="fab fa-html5" alt="html-logo"></i>
+            <i class="fab fa-sass" alt="scss-logo"></i>
+            <i class="fab fa-js" alt="js-logo"></i>
+            <i class="fab fa-react" alt="react-logo"></i>
+            <i class="fab fa-figma" alt="figma-logo"></i>
+          </div>
+          <div class="project-btns">
+            <a class="project-btn" href="4c2bab69c383b43f3d1e76a8da44646b" target="_blank">LIVE PAGE</a>
+          </div>
+        </div>
+        <div class="project" data-project="2">
+          <div class="project-img project-expresa">
+            <picture>
+              <source type="image/webp" srcset="5c8c7303852d1db3e990c9813317e9d3">
+              <source type="image/jpg" srcset="53ef12815523b683e146fb809a491189">
+              <img src="53ef12815523b683e146fb809a491189" alt="Expresa Foods First Fold">
+            </picture>
+          </div>
+          <p class="project-name" data-aos="fade-left">Expresa Foods</p>
+          <div class="project-description">
+            I designed and developed this simple but elegant website for a small
+            family-owned Mexican food place. The main idea of the page was to
+            show any general information, as well as the menu and location.
+          </div>
+          <div class="project-uses">
+            <i class="fab fa-html5" alt="html-logo"></i>
+            <i class="fab fa-css3-alt" alt="css-logo"></i>
+            <i class="fab fa-js" alt="js-log"></i>
+            <i class="fab fa-figma" alt="figma-logo"></i>
+          </div>
+          <div class="project-btns" data-aos="fade-left">
+            <a class="project-btn" href="82a4f092ecedff4551a40bcb1074a2eb" target="_blank">LIVE PAGE</a>
+            <a class="project-btn" href="e500776f9ddca94de8e120e05faafac7" target="_blank">CONCEPT</a>
+          </div>
+        </div>
+      </section>
+      <section class="experiments" id="experiments">
+        <div class="section-title">Experiments</div>
+        <div class="section-subtitle">Just 4 Fun</div>
+        <div class="experiments-container" data-aos="fade-up">
+          <div class="experiment">
+            <a aria-label="pandapen-picture" href="9e55113bb2868d4d15c3bc03b584d63b" target="_blank" class="experiment-img panda"></a>
+            <div class="experiment-title">- TITLE</div>
+            <a href="9e55113bb2868d4d15c3bc03b584d63b" target="_blank" class="experiment-name">Panda with Only CSS</a>
+          </div>
+          <div class="experiment">
+            <a aria-label="daynnightswitch-picture" href="6641b525f4c26dee5298938803bae7bb" target="_blank" class="experiment-img day-n-night"></a>
+            <div class="experiment-title">- TITLE</div>
+            <a href="6641b525f4c26dee5298938803bae7bb" target="_blank" class="experiment-name">Day & Night Switch</a>
+          </div>
+          <div class="experiment">
+            <a aria-label="navbar-picture" href="3aa16769fcf1da27cc8872c54aaa47bd" target="_blank" class="experiment-img navbar-animation"></a>
+            <div class="experiment-title">- TITLE</div>
+            <a href="3aa16769fcf1da27cc8872c54aaa47bd" target="_blank" class="experiment-name">Navbar Animation when Hover</a>
+          </div>
+          <div class="experiment">
+            <a aria-label="fullpagemenu-picture" href="d98c2ea3b4a0ffa4818790e37650ca7d" target="_blank" class="experiment-img full-page-menu"></a>
+            <div class="experiment-title">- TITLE</div>
+            <a href="d98c2ea3b4a0ffa4818790e37650ca7d" target="_blank" class="experiment-name">Full-page menu experience</a>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="skills--container">
+          <p class="title">Skills & Tools</p>
+          <p class="txt technologies--txt">
+            These are the technologies that I use to bring things to life:
+          </p>
+          <div class="technologies">
+            <div class="tech">
+              <i class="fab fa-html5 tech--logo" alt="html-logo"></i>
+              <p class="tech--txt">HTML5</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-css3-alt tech--logo" alt="css-logo"></i>
+              <p class="tech--txt">CSS3</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-sass tech--logo" alt="scss-logo"></i>
+              <p class="tech--txt">SCSS</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-js tech--logo" alt="js-log"></i>
+              <p class="tech--txt">JavaScript</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-react tech--logo" alt="react-logo"></i>
+              <p class="tech--txt">React</p>
+            </div>
+            <div class="tech">
+              <i class="fas fa-cogs tech--logo"></i>
+              <p class="tech--txt">RESTful APIs</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-git-alt tech--logo"></i>
+              <p class="tech--txt">Git</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-github tech--logo"></i>
+              <p class="tech--txt">Github</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-gulp tech--logo" alt="gulp-logo"></i>
+              <p class="tech--txt">Gulp</p>
+            </div>
+            <div class="tech">
+              <i class="fab fa-figma tech--logo" alt="figma-logo"></i>
+              <p class="tech--txt">Figma</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="section-title contact-title">Let's talk</div>
+        <div class="section-subtitle contact-subtitle">
+          New project, any freelance inquiry or even a coffee, hit me up in the
+          form below or
+          <a href="ba6242543ad6c6755f2f7cef9ac04859">send me an email</a>
+        </div>
+        <div class="form-container">
+          <form action="/src/success/hurray.html" name="contact" method="POST" data-netlify="true" class="form" data-netlify-recaptcha="true" autocomplete="off">
+            <input autocomplete="off" name="hidden" type="text" style="991b64ee1ee70b2eb17c141936fa2829">
+            <input aria-label="name-input" type="text" name="name" id="name" maxlength="255" placeholder="Your Name" class="input left">
+            <input aria-label="email-input" type="email" name="email" id="email" maxlength="255" placeholder="Your Email" class="input left" autocomplete="off">
+            <input aria-label="company-input" type="text" name="company" id="company" maxlength="255" placeholder="Company" class="input left">
+            <textarea aria-label="msg-area" cols="30" rows="8" name="message" id="message" placeholder="Message" class="input msg"></textarea>
+            <input aria-label="submit-input" type="submit" value="SEND" class="submit">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer-header">
+        <div class="footer-logo">JRM</div>
+        Jesús Ramírez
+      </div>
+      <div class="footer-info">
+        <div class="footer-menu">
+          <p class="footer-title">Menu</p>
+          <p class="footer-txt footer-link footer-menu-link" data-block="projects">
+            Work
+          </p>
+          <p class="footer-txt footer-link footer-menu-link" data-block="experiments">
+            Just 4 Fun
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-title">Contact</p>
+          <p class="footer-txt">Let's work together!</p>
+          <a href="ba6242543ad6c6755f2f7cef9ac04859" class="hero-btn">EMAIL ME</a>
+        </div>
+        <div class="footer-online">
+          <p class="footer-title">Online</p>
+          <a href="f69eb9c89384212a9fe258dd9558864b" target="_blank" class="footer-txt footer-link">Twitter</a>
+          <a href="c64de2c0a6941fe9abd278c9a2e27989" target="_blank" class="footer-txt footer-link">LinkedIn</a>
+          <a href="aabdde9b7c9ae7bf3b60ec3b482de29f" target="_blank" class="footer-txt footer-link">Codepen</a>
+          <a href="cecd72dc10544484bed7580ff53b415f" target="_blank" class="footer-txt footer-link">Github</a>
+          <a href="f0794fa9ac7e069bd826947c8223139e" target="_blank" class="footer-txt footer-link">Behance</a>
+        </div>
+      </div>
+      <div class="footer-rights">
+        <p class="footer-txt">
+          <script data-parcel-key="e151046910229e9df7c95eb0bfe113e6">
+            document.write(new Date().getFullYear());
+          </script>
+          Jesús Ramírez. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script defer="" src="513c8eb84c72d9320efb7ebef8393338" crossorigin="anonymous"></script>
+    <script src="b6417c25736dad35e1e4cbcd1d1d9b39"></script>
+    <script src="88b00da73f4975089fb7da8338a9b76a"></script>
+    <script src="6adbca1eef79ea1a066df4bdbfd28974"></script>
+  </body>
+</html>
