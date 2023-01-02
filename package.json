@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/jesusrmz19/Portfolio2020#readme",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.2"
+    "parcel": "^2.8.2"
   }
 }
